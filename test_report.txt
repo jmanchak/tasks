@@ -5,42 +5,9 @@
 Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+PASS src/HtmlCss.test.tsx
 PASS src/text.test.tsx
-  ● Console
-
-    console.error
-      Warning: validateDOMNesting(...): <body> cannot appear as a child of <div>.
-          at body
-          at div
-          at App
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at validateDOMNesting (node_modules/react-dom/cjs/react-dom.development.js:10081:7)
-      at createInstance (node_modules/react-dom/cjs/react-dom.development.js:10181:5)
-      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19464:28)
-      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
-      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
-      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:22707:5)
-
 PASS src/App.test.tsx
-  ● Console
-
-    console.error
-      Warning: validateDOMNesting(...): <body> cannot appear as a child of <div>.
-          at body
-          at div
-          at App
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at validateDOMNesting (node_modules/react-dom/cjs/react-dom.development.js:10081:7)
-      at createInstance (node_modules/react-dom/cjs/react-dom.development.js:10181:5)
-      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19464:28)
-      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
-      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
-      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:22707:5)
-
 ----------|---------|----------|---------|---------|-------------------
 File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------|---------|----------|---------|---------|-------------------
@@ -48,8 +15,8 @@ All files |     100 |      100 |     100 |     100 |
  App.tsx  |     100 |      100 |     100 |     100 |                   
 ----------|---------|----------|---------|---------|-------------------
 
-Test Suites: 2 passed, 2 total
-Tests:       2 passed, 2 total
+Test Suites: 3 passed, 3 total
+Tests:       9 passed, 9 total
 Snapshots:   0 total
-Time:        1.751 s
+Time:        3.044 s
 Ran all test suites.
