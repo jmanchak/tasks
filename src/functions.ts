@@ -39,7 +39,7 @@ export function shout(message: string): string {
  * mark. Do not use an `if` statement in solving this question.
  */
 export function isQuestion(message: string): boolean {
-    let messageLength: number = message.length;
+    const messageLength: number = message.length;
     return message.charAt(messageLength - 1) === "?" ? true : false;
 }
 
