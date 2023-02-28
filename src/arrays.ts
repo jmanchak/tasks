@@ -154,8 +154,6 @@ export function injectPositive(values: number[]): number[] {
 
     const isNeg = values.findIndex((negValue: number): boolean => negValue < 0);
 
-    console.log("Index of neg: " + isNeg);
-
     if (isNeg === -1) {
         const noNeg = values.reduce(
             (currTot: number, currVal: number) => currTot + currVal,
