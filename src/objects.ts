@@ -50,8 +50,7 @@ export function isCorrect(question: Question, answer: string): boolean {
 export function isValid(question: Question, answer: string): boolean {
     if (question.type === "short_answer_question") {
         return true;
-    }
-    if (question.type === "multiple_choice_question") {
+    } else if (question.type === "multiple_choice_question") {
         const qOptions = question.options.map((isOption: string): boolean =>
             isOption === answer ? true : false
         );
@@ -59,6 +58,8 @@ export function isValid(question: Question, answer: string): boolean {
             (isTrue: boolean): boolean => isTrue === true
         );
         return areAllTrue;
+    } else {
+        return false;
     }
 }
 
@@ -93,8 +94,7 @@ export function toShortForm(question: Question): string {
 export function toMarkdown(question: Question): string {
     if (question.type === "short_answer_question") {
         return "# " + question.name + "\n" + question.body;
-    }
-    if (question.type === "multiple_choice_question") {
+    } else if (question.type === "multiple_choice_question") {
         //const eachOption = question.options.map((optionList: string): string =>
         return (
             "# " +
@@ -104,6 +104,8 @@ export function toMarkdown(question: Question): string {
             "\n- " +
             question.options.join("\n- ")
         );
+    } else {
+        return "";
     }
 }
 
