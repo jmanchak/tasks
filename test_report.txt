@@ -8,27 +8,38 @@ Browserslist: caniuse-lite is outdated. Please run:
 PASS src/nested.test.ts
 PASS src/arrays.test.ts
 PASS src/objects.test.ts
-PASS src/HtmlCss.test.tsx
+PASS src/components/StartAttempt.test.tsx
+PASS src/components/TwoDice.test.tsx
 PASS src/functions.test.ts
-PASS src/text.test.tsx
+PASS src/components/ChangeType.test.tsx
+PASS src/components/CycleHoliday.test.tsx
+PASS src/components/Counter.test.tsx
+PASS src/components/RevealAnswer.test.tsx
 PASS src/App.test.tsx
-----------------|---------|----------|---------|---------|-------------------
-File            | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
-----------------|---------|----------|---------|---------|-------------------
-All files       |   98.52 |    96.59 |     100 |    98.5 |                   
- src            |   98.52 |    96.59 |     100 |    98.5 |                   
-  App.tsx       |     100 |      100 |     100 |     100 |                   
-  arrays.ts     |   98.36 |    96.15 |     100 |   98.27 | 10                
-  functions.ts  |     100 |      100 |     100 |     100 |                   
-  nested.ts     |     100 |      100 |     100 |     100 |                   
-  objects.ts    |   92.59 |    88.23 |     100 |   92.59 | 62,108            
- src/interfaces |       0 |        0 |       0 |       0 |                   
-  answer.ts     |       0 |        0 |       0 |       0 |                   
-  question.ts   |       0 |        0 |       0 |       0 |                   
-----------------|---------|----------|---------|---------|-------------------
+-------------------|---------|----------|---------|---------|-------------------
+File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------|---------|----------|---------|---------|-------------------
+All files          |   98.71 |    96.22 |     100 |   98.69 |                   
+ src               |   98.51 |    96.59 |     100 |   98.49 |                   
+  App.tsx          |     100 |      100 |     100 |     100 |                   
+  arrays.ts        |   98.36 |    96.15 |     100 |   98.27 | 10                
+  functions.ts     |     100 |      100 |     100 |     100 |                   
+  nested.ts        |     100 |      100 |     100 |     100 |                   
+  objects.ts       |   92.59 |    88.23 |     100 |   92.59 | 62,108            
+ src/components    |     100 |    94.44 |     100 |     100 |                   
+  ChangeType.tsx   |     100 |      100 |     100 |     100 |                   
+  Counter.tsx      |     100 |      100 |     100 |     100 |                   
+  CycleHoliday.tsx |     100 |      100 |     100 |     100 |                   
+  RevealAnswer.tsx |     100 |      100 |     100 |     100 |                   
+  StartAttempt.tsx |     100 |    83.33 |     100 |     100 | 10                
+  TwoDice.tsx      |     100 |      100 |     100 |     100 |                   
+ src/interfaces    |       0 |        0 |       0 |       0 |                   
+  answer.ts        |       0 |        0 |       0 |       0 |                   
+  question.ts      |       0 |        0 |       0 |       0 |                   
+-------------------|---------|----------|---------|---------|-------------------
 
-Test Suites: 7 passed, 7 total
-Tests:       49 passed, 49 total
+Test Suites: 11 passed, 11 total
+Tests:       93 passed, 93 total
 Snapshots:   0 total
-Time:        6.469 s
+Time:        7.197 s
 Ran all test suites.
